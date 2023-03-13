@@ -1,0 +1,23 @@
+a {
+  text-decoration: none;
+  color: #2f3035;
+}
+
+ul.main-nav-list li a {
+  padding-right: auto;
+}
+
+header *{
+  display: inline-block;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+}
+
+img.main-logo{
+  margin-top: 25px;
+  vertical-align: middle;
+  background-color: antiquewhite;
+}
