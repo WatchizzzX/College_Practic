@@ -1,23 +1,84 @@
+@font-face {
+  font-family: "SF Pro Display";
+  font-style:normal;
+  font-weight: 700;
+
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("SF Pro Display"),
+       /* Если не получилось, загрузит woff2 */
+       url("/fonts/SFProDisplay-Bold.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("/fonts/SFProDisplay-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style:normal;
+  font-weight: 400;
+
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("SF Pro Display"),
+       /* Если не получилось, загрузит woff2 */
+       url("/fonts/SFProDisplay-Regular.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("/fonts/SFProDisplay-Regular.woff2") format("woff");
+}
+
 a {
   text-decoration: none;
   color: #2f3035;
 }
 
-ul.main-nav-list li a {
-  padding-right: auto;
-}
-
-header *{
-  display: inline-block;
-}
-
-header {
-  text-align: center;
-  width: 100%;
+header{
+  background-color: white;
+  height: 100px;
+  width: 1170px;
+  margin: 0 auto;
+  margin-top: 25px;
 }
 
 img.main-logo{
-  margin-top: 25px;
+  display: inline-block;
   vertical-align: middle;
-  background-color: antiquewhite;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav{
+  display: inline-block;
+  vertical-align: middle;
+  width: 546px;
+}
+
+.main-nav-list{
+  padding: 0px;
+  text-align: center;
+}
+
+.main-nav-list li{
+  display: inline-block;
+  font-family: "SF Pro Display", "Arial", sans-serif;
+  font-weight: 700;
+  padding-right: 50px;
+}
+
+.location{
+  display: inline-block;
+  font-family: "SF Pro Display", "Arial", sans-serif;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-left: 111px;
+  height: 50px;
+}
+
+.profile-links{
+  display: inline-block;
+  padding-left: 76px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.profile-links li{
+  display: inline-block;
+  padding-left: 10px;
 }
