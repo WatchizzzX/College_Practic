@@ -9,7 +9,7 @@
 
   <body>
     <header class="main-header">
-      <nav>
+      <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a href="#">Магазины</a></li>
           <li><a href="#">Акции</a></li>
@@ -23,8 +23,8 @@
         height="76"
         alt="Логотип компании"
       />
-      <span class="location">
-        <img src="/images/location.svg" width="30" height="30">
+      <span class="location-info">
+        <img src="/images/location.svg" width="30" height="30" />
         Москва, ул. Науки 25
       </span>
       <ul class="profile-links">
@@ -59,24 +59,22 @@
           /></a>
         </li>
       </ul>
-    </header>
-
-    <main>
-      <h1>Интернет-магазин DriveMoto</h1>
       <ul class="catalog-slider">
         <li><a href="#">Квадроциклы</a></li>
         <li><a href="#">Катера</a></li>
-        <li><a href="#">Гидроциклы</a></li>
+        <li><a href="catalog.html">Гидроциклы</a></li>
         <li><a href="#">Лодки</a></li>
         <li><a href="#">Вездеходы</a></li>
         <li><a href="#">Снегоходы</a></li>
         <li><a href="#">Двигатели</a></li>
         <li><a href="#">Запчасти</a></li>
       </ul>
+    </header>
 
+    <main>
       <img
         class="main-banner"
-        src="images/main-banner-1.jpg"
+        src="http://placehold.it/870x400"
         width="870"
         height="400"
         alt="Главный баннер"
@@ -167,8 +165,180 @@
           />
         </div>
       </section>
+      <section class="popular-products">
+        <h2>Популярные товары</h2>
+        <ul class="product-category-slider">
+          <li><a href="#">Запчасти</a></li>
+          <li><a href="#">Моторы</a></li>
+          <li><a href="#">Шины</a></li>
+          <li><a href="#">Электроника</a></li>
+          <li><a href="#">Инструменты</a></li>
+          <li><a href="#">Аксессуары</a></li>
+        </ul>
+      </section>
+      <section class="card-slider">
+        <div class="card">
+          <img
+            src="/images/products/backpack.png"
+            width="200"
+            height="200"
+            alt="Водонепроницаемый рюкзак"
+          />
+          <p>Водонепроницаемый рюкзак</p>
+          <p class="cost">9 800 ₽</p>
+          <button class="add-cart-btn" type="button">Добавить в корзину</button>
+        </div>
+        <div class="sale-card">
+          <img
+            src="/images/products/brp-mens-airflow-pfd.png"
+            width="200"
+            height="200"
+            alt="Спасательный жилет BRP Men's Airflow PFD"
+          />
+          <p class="sale-text">Sale</p>
+          <p>Спасательный жилет BRP Men's Airflow PFD</p>
+          <p class="cost">6 900 ₽</p>
+          <button class="add-cart-btn" type="button">Добавить в корзину</button>
+        </div>
+        <div class="card">
+          <img
+            src="/images/products/brp-audio-premium-system.png"
+            width="200"
+            height="200"
+            alt="BRP Audio-Premium System"
+          />
+          <p>BRP Audio-Premium System</p>
+          <p class="cost">68 000 ₽</p>
+          <button class="add-cart-btn" type="button">Добавить в корзину</button>
+        </div>
+        <div class="sale-card out-card">
+          <img
+            src="/images/products/brp-mens-airflow-pfd.png"
+            width="200"
+            height="200"
+            alt="Спасательное снаряжение"
+          />
+          <p class="sale-text">Sale</p>
+          <p>Спасательное снаряжение</p>
+          <p class="cost">6 900 ₽</p>
+          <button class="add-cart-btn" type="button">Добавить в корзину</button>
+          <button type="button">Сообщить о поступлении</button>
+        </div>
+        <button type="button">Показать ещё</button>
+      </section>
+      <section class="small-banner">
+        <img
+          src="/images/small-banner-1.png"
+          width="152"
+          height="116"
+          alt="Скидки на все запчасти до 70%"
+        />
+        <img
+          src="/images/small-banner-2.png"
+          width="175"
+          height="113"
+          alt="Скидки на все запчасти до 70%"
+        />
+        <p>СКИДКИ на все запчасти до 70%</p>
+        <a href="#">Посмотреть все</a>
+      </section>
+      <section class="with-product-buy">
+        <p>С этим товаром покупают</p>
+        <ul class="product-category-slider">
+          <li><a href="#">Запчасти</a></li>
+          <li><a href="#">Моторы</a></li>
+          <li><a href="#">Шины</a></li>
+          <li><a href="#">Электроника</a></li>
+          <li><a href="#">Инструменты</a></li>
+          <li><a href="#">Аксессуары</a></li>
+        </ul>
+      </section>
+      <section class="card-slider">
+        <div class="sale-card out-card">
+          <img
+            src="/images/products/brp-audio-portative-system.png"
+            width="200"
+            height="133"
+            alt="BRP Audio-портативная система"
+          />
+          <p class="sale-text">Sale</p>
+          <p>BRP Audio-портативная система</p>
+          <p class="cost">6 900 ₽</p>
+          <button class="add-cart-btn" type="button">Добавить в корзину</button>
+          <button type="button">Сообщить о поступлении</button>
+        </div>
+        <div class="card">
+          <img
+            src="/images/products/garmin-echomap-plus-62cv.png"
+            width="200"
+            height="143"
+            alt="Garmin Echomap Plus 62cv"
+          />
+          <p>Garmin Echomap Plus 62cv</p>
+          <p class="cost">45 800 ₽</p>
+          <button class="add-cart-btn" type="button">Добавить в корзину</button>
+        </div>
+        <div class="sale-card out-card">
+          <img
+            src="/images/products/rf-d-e-s-s-tm-key.png"
+            width="180"
+            height="180"
+            alt="RF D.E.S.S.TM Key"
+          />
+          <p class="sale-text">Sale</p>
+          <p>RF D.E.S.S.TM Key</p>
+          <p class="cost">6 900 ₽</p>
+          <button class="add-cart-btn" type="button">Добавить в корзину</button>
+          <button type="button">Сообщить о поступлении</button>
+        </div>
+        <div class="card">
+          <img
+            src="/images/products/men-costume-3mm.png"
+            width="200"
+            height="200"
+            alt="Мужской костюм 3мм"
+          />
+          <p>Мужской костюм 3мм</p>
+          <p class="cost">7 000 ₽</p>
+          <button class="add-cart-btn" type="button">Добавить в корзину</button>
+        </div>
+      </section>
     </main>
 
-    <footer class="main-footer"></footer>
+    <footer class="main-footer">
+      <form class="email-subscribe">
+        <p>Подпишитесь на нашу рассылку и узнавайте о акциях быстрее</p>
+        <input
+          name="email-input"
+          type="email"
+          placeholder="Введите ваш e-mail"
+        />
+        <button type="button" formmethod="post">Отправить</button>
+      </form>
+      <ul class="footer-information">
+        <li>Информация</li>
+        <li><a href="#">О Компании</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Акции</a></li>
+        <li><a href="#">Магазины</a></li>
+      </ul>
+      <ul class="footer-information">
+        <li>Интернет-магазин</li>
+        <li><a href="#">Доставка и самовывоз</a></li>
+        <li><a href="#">Оплата</a></li>
+        <li><a href="#">Возврат-обмен</a></li>
+        <li><a href="#">Новости</a></li>
+      </ul>
+      <ul class="socials">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">VK</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Youtube</a></li>
+      </ul>
+      <ul class="extra-information">
+        <li><a href="#">Договор оферты</a></li>
+        <li><a href="#">Порядок обработки персональных данных</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
