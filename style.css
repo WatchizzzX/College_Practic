@@ -1,0 +1,335 @@
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+
+  src: local("SF Pro Display"),
+    url("/fonts/SFProDisplay-Bold.woff2") format("woff2"),
+    url("/fonts/SFProDisplay-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+
+  src: local("SF Pro Display"),
+    url("/fonts/SFProDisplay-Regular.woff2") format("woff2"),
+    url("/fonts/SFProDisplay-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 600;
+
+  src: local("Proxima Nova"),
+    url("/fonts/ProximaNova-Semibold.woff2") format("woff2"),
+    url("/fonts/ProximaNova-Semibold.woff") format("woff");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2f3035;
+}
+
+.main-header {
+  height: 153px;
+  width: 1170px;
+  margin: 0 auto;
+  margin-top: 25px;
+
+  background-color: white;
+}
+
+.main-logo {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: middle;
+}
+
+.main-nav {
+  display: inline-block;
+  width: 546px;
+  vertical-align: middle;
+}
+
+.main-nav-list {
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-nav-list li {
+  display: inline-block;
+  padding-right: 50px;
+
+  font-family: "SF Pro Display", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.location-info {
+  display: inline-block;
+  margin-left: 128px;
+  vertical-align: middle;
+  position: relative;
+
+  font-family: "SF Pro Display", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.location-info img {
+  position: absolute;
+  left: -30px;
+  bottom: 5px;
+}
+
+.profile-links {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  padding-left: 76px;
+  vertical-align: middle;
+
+  text-align: center;
+}
+
+.profile-links li {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.catalog-slider {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-top: 21px;
+  justify-content: space-between;
+
+  line-height: 53px;
+
+  background-color: #f0f0f4;
+}
+
+.catalog-slider li {
+  display: inline;
+
+  font-family: "SF Pro Display", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.main-banner {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 81px;
+  margin-bottom: 77px;
+  width: 1170px;
+  justify-content: space-between;
+}
+
+.promocard {
+  width: 265px;
+  height: 397px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.promocard img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-name {
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  padding: 0px 12px;
+
+  text-align: center;
+  font-family: "SF Pro Display", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.promocard-header {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.promocard-text {
+  width: 90px;
+  height: 30px;
+  margin: 0px;
+  padding: 0px;
+
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  background: #1c62cd;
+  color: white;
+}
+
+.new-cost {
+  width: 130px;
+  height: 30px;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 8px;
+  margin-right: 10px;
+
+  font-family: "Barlow", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  text-align: right;
+
+  color: #1c62cd;
+}
+
+.old-cost {
+  width: 100%;
+  height: 30px;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 5px;
+  margin-right: 10px;
+  position: relative;
+
+  font-family: "Barlow", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: right;
+  color: #c4c4c4;
+}
+
+.old-cost::after {
+  border-bottom: 1px solid #c4c4c4;
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 100%;
+  transform: rotate(-7deg) translateY(-100%) translateX(-100%);
+}
+
+.promo-expires {
+  display: inline-block;
+  width: 100%;
+  height: 82px;
+  background: #f0f0f4;
+  padding-top: 25px;
+}
+
+.promo-expires p {
+  padding: 0px;
+  margin: 0px;
+  line-height: 25px;
+}
+
+.promo-expires p:nth-child(1) {
+  font-family: "SF Pro Display", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+.promo-expires p:nth-child(2) {
+  font-family: "Barlow", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #1c62cd;
+  text-align: center;
+}
+
+.search-bar {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.search-bar button {
+  height: 47px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  border: 0px;
+  background-color: white;
+  padding: 12px;
+
+  border-radius: 5px;
+}
+
+.search-bar button:nth-child(2) {
+  font-weight: 700;
+
+  background: #f0f0f4;
+  color: #2f3035;
+}
+
+.search-bar input {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 20px;
+  margin-top: 25px;
+  display: inline-block;
+  width: 1025px;
+  height: 50px;
+  background: #f0f0f4;
+  border: 0px;
+  border-radius: 3px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #656464;
+}
+
+button[name="get-search"] {
+  width: 140px;
+  padding: 0px;
+  margin: 0px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  height: 50px;
+  background: #1c62cd;
+  color: white;
+  border-radius: 3px;
+}

@@ -72,28 +72,33 @@
     </header>
 
     <main>
-      <img
-        class="main-banner"
-        src="http://placehold.it/870x400"
-        width="870"
-        height="400"
-        alt="Главный баннер"
-      />
-
-      <div class="promocard">
+      <section class="main-banner">
         <img
-          src="/images/products/suzuki-df9-9brs.png"
-          width="125"
-          height="176"
-          alt="Лодочный мотор Suzuki DF9.9BRS"
+          src="http://placehold.it/870x400"
+          width="870"
+          height="400"
+          alt="Главный баннер"
         />
-        <p class="promocard-text">Акция</p>
-        <p>Лодочный мотор Suzuki DF9.9BRS</p>
-        <p class="cost">190 000 ₽</p>
-        <p class="old-cost">225 000 ₽</p>
-        <p class="expires-date">31.08.2023</p>
-      </div>
 
+        <div class="promocard">
+          <div class="promocard-header">
+            <p class="promocard-text">Акция</p>
+            <p class="new-cost">190 000 ₽</p>
+            <p class="old-cost">225 000 ₽</p>
+          </div>
+          <img
+            src="/images/products/suzuki-df9-9brs.png"
+            width="125"
+            height="176"
+            alt="Лодочный мотор Suzuki DF9.9BRS"
+          />
+          <p class="card-name">Лодочный мотор Suzuki DF9.9BRS</p>
+          <div class="promo-expires">
+            <p>Акция действует до</p>
+            <p>31.08.2023</p>
+          </div>
+        </div>
+      </section>
       <form id="search-bar">
         <button name="number-search" type="button">Поиск по номеру</button>
         <button name="brand-search" type="button">Поиск по марке</button>
